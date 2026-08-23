@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "name": "LeetLens",
+  "version": "1.0",
+  "permissions": [
+  "activeTab",
+  "storage"
+],
+"host_permissions": [
+  "https://generativelanguage.googleapis.com/*"
+],
+
+  "action": {
+  "default_popup": "popup/popup.html"
+},
+"options_page": "settings/settings.html",
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://leetcode.com/problems/*"
+      ],
+      "js": [
+      
+      "content/extractor.js",
+      "content/parser.js",
+      "content/inserter.js",
+      "content/cache.js",
+      "content/content.js"
+]
+    }
+  ]
+}

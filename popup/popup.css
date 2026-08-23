@@ -1,0 +1,32 @@
+
+ body {
+     width: 350px;
+     padding: 10px;
+     font-family: Arial, sans-serif;
+     border-radius: 5px;
+     background-color: #6c8bc9;
+ }
+
+ h2 {
+     margin-top: 0;
+ }
+
+ .card {
+     margin-top: 10px;
+     padding: 8px;
+     border: 1px solid #ddd;
+     border-radius: 6px;
+ }
+
+.testcase {
+    cursor: pointer;
+    transition: .25s;
+}
+
+.testcase:hover {
+
+    transform: scale(1.02);
+
+    background: #2b2b2b;
+
+}
